@@ -10,6 +10,8 @@ export class Pagina1Component
   implements OnInit, OnChanges, DoCheck,AfterContentInit,AfterContentChecked,
             AfterViewInit,AfterViewChecked,OnDestroy {
 
+  nombre: string="Israel";
+
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     console.log('ngOnChanges');
@@ -23,7 +25,7 @@ export class Pagina1Component
   ngAfterContentChecked(): void {
     console.log('ngAfterContentChecked');
   }
-  ngAfterViewInit(): void {
+  ngAfterViewInit(): void { 
     console.log('ngAfterViewInit');
   }
   ngAfterViewChecked(): void {
@@ -38,4 +40,8 @@ export class Pagina1Component
     console.log('ngOnInit');
   }
 
+
+  guardar(){
+
+  }
 }
